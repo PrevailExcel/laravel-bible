@@ -1,0 +1,46 @@
+{
+    "name": "prevailexcel/laravel-bible", 
+    "description": "A Laravel Package for nearly 2500 Bible versions available across over 1600 languages, powered by API.Bible.",
+    "keywords": [
+      "Religious",
+      "Bible",
+      "php",
+      "github",
+      "laravel",
+      "Open Source",
+      "Holy book",
+      "laravel 7",
+      "laravel 8",
+      "laravel 9",
+      "laravel 10"
+    ],    
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "autoload": {
+      "files": [
+        "utils/helpers/bible.php"
+      ],
+        "psr-4": {
+            "PrevailExcel\\Bible\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "PrevailExcel",
+            "email": "prevailexcellent@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0.1"
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "PrevailExcel\\Bible\\BibleServiceProvider"
+        ],
+        "aliases": {
+          "Bible": "PrevailExcel\\Bible\\Facades\\Bible"
+        }
+      }
+    }
+}
